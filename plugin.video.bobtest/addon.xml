@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.bobtest" version="0.1.82" name="Bob's Collection (BOB)" provider-name="BigOldBoy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.bigoldboy" />        
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension point="xbmc.service" library="default.py" start="startup"/>
+    <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Ron's Addon</summary>
+        <description>One Place for Everything</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
+

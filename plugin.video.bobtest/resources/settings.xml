@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="General Settings"> 
+  	<setting type="sep"/>  
+    <setting id="where_r_files"   	     type= "folder" label="Location of .ini files" default="" />   
+    <setting id="livesongs"              type= "folder" label="Location of Live Songs" default="smb://DYERNAS/Multimedia/Music Videos/Live Songs/" />
+  </category>
+
+  <category label="Vader"> 
+    <setting type="sep"/>  
+    <setting id="vadersortbychannel"     type= "bool" label="Sort Vader by Channel" default="true" />   
+    <setting id="vadersortbydate"        type= "bool" label="Sort Vader by Date"  default="true" />     
+    <setting id="vadersortbym3u"         type= "bool" label="Sort Vader by m3u"   default="true" />     
+  </category>
+
+  <category label="Radio"> 
+    <setting type="sep"/>  
+    <setting id="addtapin"               type= "bool" label="Include Tapin Favorites (need path)" default="true" />   
+    <setting id="tapinfavs"              type= "file" label="Location of Tapin Favorites File" default="" />      
+    <setting id="addradio"               type= "bool" label="Include Kodi Radio Favorites" default="true" />       
+  </category>
+
+  <category label="OTA"> 
+    <setting type="sep"/>  
+    <setting id="otanews"               type= "folder" label="Location of OTA News" default="" />   
+    <setting id="otashows"              type= "folder" label="Location of OTA Shows" default="" />      
+  </category>
+
+
+
+</settings>
