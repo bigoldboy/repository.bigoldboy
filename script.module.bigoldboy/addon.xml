@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.bigoldboy"
+       name="BigOldBoy's Common Files (BOB)"
+       version="0.2.00"
+       provider-name="BigOldBoy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">BigOldBoy's Common Routines</summary>
+        <description lang="en"></description>
+        <license>GPLv2</license>
+        <platform>all</platform>
+        <website></website>
+        <source></source>
+    </extension>
+</addon>

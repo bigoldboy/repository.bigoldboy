@@ -1,0 +1,7 @@
+
+0.1.0 october 17 - add some serivces
+0.0.8 september 21 - added settings
+
+-Intial release
+
+

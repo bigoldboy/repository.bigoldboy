@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="30801">Europe 1</string>		
+	<string id="30802">Europe 2</string>		
+	<string id="30803">North East</string>		
+	<string id="30804">North East 2</string>		
+	<string id="30805">West</string>	
+	<string id="30806">West 2</string>	
+	<string id="30807">South East</string>	
+	<string id="30808">South Central</string>	
+	<string id="30809">South Central 2</string>	
+	<string id="30810">Midwest/Central</string>	
+	<string id="30811">South East 2</string>	
+	<string id="30210">EU Random</string>
+    <string id="30223">EU NL1 i3d</string>
+    <string id="30224">EU London</string>
+    <string id="30211">US East Random</string>
+    <string id="30221">US West Random</string>
+    <string id="30222">US Random</string>
+	<string id="30212">Asia</string>
+	<string id="30228">EU NL2 EVO</string>
+    <string id="30229">US East VA</string>
+    <string id="30230">US East NJ</string>
+    <string id="30231">CA East TOR</string>
+    <string id="30232">CA East MTL</string>
+    <string id="30233">EU Frankfurt</string>
+
+</strings>
+
+
