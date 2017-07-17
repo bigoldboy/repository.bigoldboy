@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.bobtest" version="0.1.82" name="Bob's Collection (BOB)" provider-name="BigOldBoy">
+<addon id="plugin.video.bobtest" version="0.2.00" name="Bob's Collection (BOB)" provider-name="BigOldBoy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.bigoldboy" />
@@ -16,29 +16,23 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.testerbobby" name="My Test Add-on" version="0.0.1" provider-name="Me">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.nanscrapers" version="0.5.5" />
-        <import addon="script.module.python.koding.aio" version="0.0.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>audio executable video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Quick one liner about the add-on</summary>
-		<description lang="en">Full add-on description.</description>
-		<platform>all</platform>
-		<forum>http://www.noobsandnerds.com/support</forum>
-		<website>www.noobsandnerds.com</website>
-		<news></news>
-		<genre></genre>
-		<video_guide></video_guide>
-		<video_preview></video_preview>
-	</extension>
+<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.00"  provider-name="BigOldBoy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.bigoldboy" />
+        <import addon="script.module.liveresolver" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">Used with provide a constant way of streaming and a constant look regardless of ADDON</summary>
+    <description lang="en">Used with provide a constant way of streaming and a constant look regardless of ADDON</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
-<addon id="repository.bigoldboy" name="BigOldBoy Repo" version="0.0.1" provider-name="bigoldboy">
+<addon id="repository.bigoldboy" name="BigOldBoy Repo" version="0.0.2" provider-name="bigoldboy">
 	<extension point="xbmc.addon.repository" name="bigoldboy repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
@@ -54,5 +48,23 @@
 		<description lang="en">Biggy's Repo</description>
 		<genre></genre>
 	</extension>
+</addon>
+
+<addon id="script.module.bigoldboy"
+       name="BigOldBoy's Common Files (BOB)"
+       version="0.2.00"
+       provider-name="BigOldBoy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">BigOldBoy's Common Routines</summary>
+        <description lang="en"></description>
+        <license>GPLv2</license>
+        <platform>all</platform>
+        <website></website>
+        <source></source>
+    </extension>
 </addon>
 </addons>

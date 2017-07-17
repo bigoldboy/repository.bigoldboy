@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.00"  provider-name="BigOldBoy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.bigoldboy" />  
+        <import addon="script.module.liveresolver" />          
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">Used with provide a constant way of streaming and a constant look regardless of ADDON</summary>
+    <description lang="en">Used with provide a constant way of streaming and a constant look regardless of ADDON</description>
+    <platform>all</platform>
+  </extension>
+</addon>
