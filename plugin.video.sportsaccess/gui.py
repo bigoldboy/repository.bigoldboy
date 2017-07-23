@@ -37,7 +37,9 @@ from notification import Notification
 from strings import *
 from scoreboard import Scoreboard
 import streaming
-
+from bigoldboy import *  
+import re
+from os.path import join
 MODE_EPG = 'EPG'
 MODE_TV = 'TV'
 MODE_OSD = 'OSD'
@@ -652,6 +654,17 @@ class TVGuide(xbmcgui.WindowXML):
                 url += "/%s/%s" % (title, program.language)
             self.set_playing()
             if url[0:9] == 'plugin://':
+                import urllib
+                title = urllib.quote(program.title) 
+                if title == "": 
+                    title = "No Program Name"
+                #url += "/%s/%s" % (title, program.language)                                              
+                chnum=str(re.compile('id=(.+?),').findall(str(program))) ;chnum=chnum.replace(',',"").replace('[',"").replace(']','').replace("'",'') # clean it up 
+                joe = str(channel); x=joe.find("|"); y=joe.find(", logo")
+                if x != -1: out("x="+str(x)+" y="+str(y)); stnam=joe[x+1:y]
+                else:       stnam=str(chnum)
+                url="plugin://plugin.video.bobtv/?url="+chnum+"&name="+stnam+"&mode=997&title="+title
+                xbmc.executebuiltin('XBMC.RunPlugin(%s)' % url)
                 if self.alternativePlayback:
                     xbmc.executebuiltin('XBMC.RunPlugin(%s)' % url)
                 elif self.osdEnabled:

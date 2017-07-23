@@ -32,11 +32,12 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.sportsaccess" name="SportsAccess" version="2.2.5" provider-name="SportsAccess">
+<addon id="plugin.video.sportsaccess" name="SportsAccess (BOB)" version="2.2.5a (BOB 0.1.86)" provider-name="SportsAccess">
     <requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.common.plugin.cache" version="0.9.1"/>
+    		<import addon="script.module.bigoldboy" />
         <import addon="script.module.pytz" version="2014.2"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">

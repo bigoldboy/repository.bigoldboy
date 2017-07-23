@@ -15,7 +15,9 @@ import time
 import xbmc
 import xbmcaddon
 import xbmcgui
-import xbmcplugin
+import xbmcplugin, xbmcvfs
+from bigoldboy import *  #Needed to use BOB routines
+
 
 addon_id = 'plugin.video.sportsaccess'
 AddonID = "plugin.video.sportsaccess"
@@ -231,22 +233,12 @@ def MAINSA():
     xbmc.log(requestUrl)
     scheduleHtml = htmlNoCookies(requestUrl)
     scheduleHtml = cleanHex(scheduleHtml)
-    if setDefaultDay:
-        match = re.compile('data-day="([^"]+)">Today').findall(scheduleHtml)
-        timestamp = match[0]
-        scheduleConfig['scheduleTimestamp'] = timestamp
-    addDir('[COLOR red]Server:[/COLOR] '+playConfig['defaultServerName']+" (Click Here)", 'url', 563, artpath + 'empty.png')
-    addLink2('[I][COLOR red]Refresh Links[/COLOR][/I]  (Click Here if Vidoes are not playing)', 'url', 555,
-             artpath + 'empty.png', fanart)
-    addDir('[COLOR orange]All Channels[/COLOR] (Click Here)', 'test', 477, artpath + 'empty.png')
-    addDir('[COLOR red]Date:[/COLOR] '+sfunctions.timestampToDate(scheduleConfig['scheduleTimestamp'])+ " (Click to change)", 'f', 561, artpath + 'empty.png')
-    addDir('[COLOR red]Category:[/COLOR] '+scheduleConfig['scheduleCategory']+' (Click Here)', 'f', 557, artpath + 'empty.png')
-    addDir('[COLOR red]Timezone:[/COLOR] '+scheduleConfig['scheduleTimezoneName']+' (Click Here)', 'f', 559, artpath + 'empty.png')
-    addLink2('[B][COLOR blue]Open EPG[/COLOR][/B] (Click Here)', 'url', 999, icon, fanart)
     listHtml = scheduleHtml.split('id="schedule"')[1]
     listHtml = listHtml.split('</ul>')[0]
     listHtml = listHtml.split('<ul>')[1]
     listItems = re.compile('<li.+?>\n*(.*\n*.*\n*.*\n*.*\n*.*\n*.*)</li>').findall(listHtml)
+    addLink2("[COLOR orange]        >>> Today's Sporting Events - Click Here for EPG <<<[/COLOR]", 'url', 999, icon, fanart)
+
     for line in listItems:
         line = line.strip()
         itemParts = re.compile('.* (.*) \|.*\n*.*<i>#(.+)</i>.*\n*.*\|.*\n*(.+)').findall(line)
@@ -254,17 +246,41 @@ def MAINSA():
             name = re.sub('[\t+]', '', name)
             name = re.sub('<img.*>', '', name)
             name = name.replace("&amp;","&")
-            ch = str(ch)
+            if int(ch) > 99: strch = "[COLOR orange]" + str(ch) + "[/COLOR]"
+            else: strch = "[COLOR orange]0" + str(ch)+ "[/COLOR]"
+            if "Bellator" in name or "UFC" in name or "Toronto" in name or "MMA" in name or "VictoryFC" in name: name="[COLOR yellow]"+name+"[/COLOR]"
+            else: name="[COLOR white]"+name+"[/COLOR]"
+            
+            starttime=time[0:5] 
+            if int(starttime[0:2])>12: starttime=str(int(time[0:2])-12)+starttime[2:]
+            if starttime[0]=="0": starttime=starttime[1:5]
+            
+            finishtime=time[6:11]
+            if int(finishtime[0:2])>12: finishtime=str(int(finishtime[0:2])-12)+finishtime[2:]
+            if finishtime[0]=="0": finishtime=finishtime[1:5]
+            
+            if int(time[0:2])>11: ampm="PM" 
+            else: ampm = "AM"            
+            time ="[COLOR crimson]"+ starttime + "-" + finishtime + " " + ampm + "[/COLOR]"
+
             if scheduleConfig['scheduleCategory'] == 'PPV':
                 addDir(time+" "+name + ' [COLOR orange]Channel:' + ch + '[/COLOR]', ch, 411,
                    'http://sportsaccess.se/images/' + ch + '.png')
             else:
-                addLink2(time+" "+name + ' [COLOR orange]Channel:' + ch + '[/COLOR]', ch, 565,
-                         'http://sportsaccess.se/images/' + ch + '.png',fanart)
+                addLink2(strch+"|"+time+" "+"|"+name, ch, 565,
+                         'http://sportsaccess.se/images/' + ch + '.png',fanart) #change event list
     addLink('', '', '')
-    addLink2('[COLOR grey][I]For support vist sportsaccess.net and submit a ticket [/I][/COLOR]', 'url', '',
+    if setDefaultDay:
+        match = re.compile('data-day="([^"]+)">Today').findall(scheduleHtml)
+        timestamp = match[0]
+        scheduleConfig['scheduleTimestamp'] = timestamp
+    addLink2('[I][COLOR red]Refresh Links[/COLOR][/I]  (Click Here if Vidoes are not playing)', 'url', 555,
              artpath + 'empty.png', fanart)
-
+    addDir('[COLOR orange]All Channels[/COLOR] (Click Here)', 'test', 477, artpath + 'empty.png')
+    addDir('[COLOR red]Date:[/COLOR] '+sfunctions.timestampToDate(scheduleConfig['scheduleTimestamp'])+ " (Click to change)", 'f', 561, artpath + 'empty.png')
+    addDir('[COLOR red]Category:[/COLOR] '+scheduleConfig['scheduleCategory']+' (Click Here)', 'f', 557, artpath + 'empty.png')
+    addDir('[COLOR red]Timezone:[/COLOR] '+scheduleConfig['scheduleTimezoneName']+' (Click Here)', 'f', 559, artpath + 'empty.png')
+    
 
 def FullChannel(murls):
     json = getNewCookie()
@@ -542,14 +558,36 @@ def UpdateConfig():
         playConfig['defaultServerName'] = selfAddon.getSetting("defaultServerName")
 
 
-def PlayChannel(chNumber, thumb):
+def PlayChannel(chNumber, thumb, name):
     json = getNewCookie()
     host = selfAddon.getSetting('defaultServerHost')
     port = selfAddon.getSetting('defaultServerPort')
     chList = json["channel_list"][str(int(chNumber))]
     chPad = '{0:02d}'.format(int(chNumber))
-    playLink = "http://"+host+":"+port+"/"+chList+"/ch"+chPad+"q1/playlist.m3u8?wmsAuthSign="+json["hash"]
-    PLAYLINK("CH - "+chNumber+" - "+selfAddon.getSetting("skyusername")+" - "+selfAddon.getSetting('defaultServerName'),playLink,thumb)
+    #playLink = "http://"+host+":"+port+"/"+chList+"/ch"+chPad+"q1.stream/playlist.m3u8?wmsAuthSign="+json["hash"]
+    #PLAYLINK("CH - "+chNumber+" - "+selfAddon.getSetting("skyusername")+" - "+selfAddon.getSetting('defaultServerName'),playLink,thumb)
+    x=name.find("|"); name=name[x+1:]; x=name.find("|"); name=name[x+1:]    
+    stationname=getstation(chNumber)
+    url="plugin://plugin.video.bobtv/?url="+chNumber+"&name="+stationname+"&mode=997&title="+name    
+    xbmc.executebuiltin('XBMC.RunPlugin(%s)' % url) 
+
+def getstation(chNumber):
+    stationname="Station Name Missing"
+    which_file = xbmc.translatePath(join('special://home', 'userdata', 'addon_data','plugin.video.sportsaccess', '1'))  
+    #which_file = selfAddon.getSetting("channelnames")+"SAchannels.xmltv"
+    try:
+        contents=readfile(which_file)  
+        contents=contents.replace('\t',"").replace('\n',"").replace('\r','').replace("'",'') # clean it up  
+        contents= re.compile('id="(.+?)">.+?en">(.+?)<').findall(contents) #parse         
+        for cnum,epgname in contents: 
+            if cnum==chNumber:            
+                stationname=epgname
+                if stationname == "TBD": stationname = "Channel "+str(chNumber)
+    except:
+        pass
+    
+
+    return stationname   
 
 def PlayChannelCustom(murl, thumb):
     json = getNewCookie()
@@ -629,7 +667,7 @@ elif mode == 563:
 elif mode == 564:
     SetServer(url)
 elif mode == 565:
-    PlayChannel(url, iconimage)
+    PlayChannel(url, iconimage, name) # also send the name with the url
 elif mode == 566:
     PlayChannelCustom(url, iconimage)
 elif mode == 999:
