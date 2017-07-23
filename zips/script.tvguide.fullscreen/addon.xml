@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.tvguide.fullscreen" name="TV Guide Fullscreen (BOB)" version="0.17.355 (BOB 0.2.02)"
+provider-name="primaeval">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.dateutil" version="2.4.2" />
+        <import addon="script.module.pil" />
+        <import addon="script.module.beautifulsoup4" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Possibly the most powerful TV Guide in the world. ;) Thanks for the major contributions from: iainmacleod, im85288, RayW1986, bluezed, andy, Zomboided, tycoo, kjb86.</description>
+        <disclaimer lang="en">Based on the original TV Guide addon by twinther, FTV Guide and Midraal's fork.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPLv2</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=282157</forum>
+        <source>https://github.com/primaeval/script.tvguide.fullscreen</source>
+        <website>https://github.com/primaeval/script.tvguide.fullscreen</website>
+        <email>primaeval</email>
+        <news>
+        </news>
+    </extension>
+</addon>

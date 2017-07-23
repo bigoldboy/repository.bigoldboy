@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.bobtest" version="0.2.00" name="Bob's Collection (BOB)" provider-name="BigOldBoy">
+<addon id="plugin.video.bobtest" version="0.2.02" name="Bob's Collection (BOB)" provider-name="BigOldBoy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.bigoldboy" />
@@ -16,7 +16,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.00"  provider-name="BigOldBoy">
+<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.02"  provider-name="BigOldBoy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.bigoldboy" />
@@ -32,7 +32,55 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.sportsaccess" name="SportsAccess (BOB)" version="2.2.5a (BOB 0.1.86)" provider-name="SportsAccess">
+<addon id="plugin.video.charlierose" name="Charlie Rose (BOB)" version="0.0.3 (BOB 0.2.02)" provider-name="MetalChris">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Charlie Rose</summary>
+    <description lang="en">Watch videos from charlierose.com - Since 1991, “Charlie Rose” has engaged America’s best thinkers, writers, politicians, athletes, entertainers, business leaders, scientists and other newsmakers in one-on-one interviews and roundtable discussions.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.docstorm" name="Documentary Storm (BOB)" version="0.0.5 (0.2.02)" provider-name="MetalChris">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.1.0" />
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch free full-length documentary films</summary>
+    <description lang="en">Watch the best free full-length documentary films on the web. History documentaries, Science, Culture, Music... Explore and Enjoy!</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sportsaccess" name="SportsAccess (BOB)" version="2.2.5a (BOB 0.2.02)" provider-name="SportsAccess">
     <requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -61,7 +109,33 @@
   </extension>
 </addon>
 
-<addon id="repository.bigoldboy" name="BigOldBoy Repo" version="0.2.01" provider-name="bigoldboy">
+<addon id="plugin.video.VADER" name="Vader Streams (BOB)" version="4.3.128 (BOB 0.2.02)" provider-name="DarthVader">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common"/>
+    <import addon="script.module.pyxbmct"  />
+    <import addon="script.module.requests" />
+    <import addon="script.module.bigoldboy"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource"
+            library="init.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="login"></extension>
+  <!--<extension point="xbmc.service" library="playMonitor.py" start="login"></extension>-->
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR red]Vader-Streams[/COLOR]</summary>
+	<description lang="en">Get all your Live Sports n Live TV here</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.bigoldboy" name="BigOldBoy Repo" version="0.2.02" provider-name="bigoldboy">
 	<extension point="xbmc.addon.repository" name="bigoldboy repo">
 		<info compressed="false">https://raw.githubusercontent.com/bigoldboy/repository.bigoldboy/master/zips/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/bigoldboy/repository.bigoldboy/master/zips/addons.xml.md5</checksum>
@@ -76,7 +150,7 @@
 
 <addon id="script.module.bigoldboy"
        name="BigOldBoy's Common Files (BOB)"
-       version="0.2.00"
+       version="0.2.02"
        provider-name="BigOldBoy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -89,6 +163,35 @@
         <platform>all</platform>
         <website></website>
         <source></source>
+    </extension>
+</addon>
+
+<addon id="script.tvguide.fullscreen" name="TV Guide Fullscreen (BOB)" version="0.17.355 (BOB 0.2.02)"
+provider-name="primaeval">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.dateutil" version="2.4.2" />
+        <import addon="script.module.pil" />
+        <import addon="script.module.beautifulsoup4" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Possibly the most powerful TV Guide in the world. ;) Thanks for the major contributions from: iainmacleod, im85288, RayW1986, bluezed, andy, Zomboided, tycoo, kjb86.</description>
+        <disclaimer lang="en">Based on the original TV Guide addon by twinther, FTV Guide and Midraal's fork.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPLv2</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=282157</forum>
+        <source>https://github.com/primaeval/script.tvguide.fullscreen</source>
+        <website>https://github.com/primaeval/script.tvguide.fullscreen</website>
+        <email>primaeval</email>
+        <news>
+        </news>
     </extension>
 </addon>
 </addons>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.00"  provider-name="BigOldBoy">
+<addon id="plugin.video.bobtv" name="Bob TV Stream Launcher (BOB)" version="0.2.02"  provider-name="BigOldBoy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.bigoldboy" />  

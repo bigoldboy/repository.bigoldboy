@@ -15,7 +15,7 @@ where_r_files=addon.getSetting("where_r_files")
 ##############################################################################################
 addon_handle = int(sys.argv[1])           # Create the directory structure
 ##############################################################################################
-def run(): #Main program which loads up main menu
+def run(): #Main program which loads up main menu    
     if mode   == None:                  CreateMenu(where_r_files+'1mainmenu.xml')
     elif "ActivateWindow" in mode :     window(mode)
     elif mode == "otanews":             otafiles(addon.getSetting("otanews"))
@@ -25,7 +25,9 @@ def run(): #Main program which loads up main menu
     elif mode == "test":                playground.test()
     elif mode == "SmoothStreams":       xbmc.executebuiltin('RunScript(script.smoothstreams)');sys.exit()        
     elif mode == "MatchCentre":         xbmc.executebuiltin('XBMC.RunPlugin(%s)' % 'plugin://plugin.video.VADER/mc/');sys.exit()  
-    elif mode == "BobGuide":            bobguide()
+    elif mode == "BobGuide":            xbmc.executebuiltin('RunScript(script.tvguide.fullscreen)');sys.exit()        
+    elif mode == "VaderEPG":            xbmc.executebuiltin('XBMC.RunPlugin(%s)' % 'plugin://plugin.video.VADER/vaderguide');sys.exit()  
+    elif mode == "PLEX":                xbmc.executebuiltin('RunScript(script.plex)');sys.exit()
     elif mode == "CreateEPG":           create_new_epg()
     elif mode == "vaderlistlive":       vaderList("live")
     elif mode == "vaderlistmovie":      vaderList("movie")
@@ -33,6 +35,7 @@ def run(): #Main program which loads up main menu
     elif mode == "all181fm":            all181fm()  
     elif mode == "yusa":                yusa()      
     else:                               CreateMenu(where_r_files+str(mode)+'.xml')
+
 
 def window(whichwin):
     xbmc.executebuiltin(whichwin)
@@ -130,11 +133,6 @@ def create_new_epg():
     sys.exit() 
 
    
-def bobguide():    
-    xbmc.executebuiltin('RunScript(script.tvguide.fullscreen)');sys.exit()        
-
-def tvguide():
-    xbmc.executebuiltin('RunScript(script.tvguide)');sys.exit()        
 
 def CreateMenu(which_file):   #Load from a XML file into directory
     xbmcplugin.setContent(addon_handle, 'videos')

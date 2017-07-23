@@ -28,8 +28,6 @@ addon_path = addon.getAddonInfo('path')   # C:\Users\rondyer\Dropbox\Kodibox\por
 addon_handle=int(sys.argv[1]) # Create Directory
 path = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.bobtv/'))
 
-title="Launching bob.tv"
-progress_create("bobtv",str.center(title,119-len(title),' '))          
 #####################################################################################
 #                   Define COMMON Subroutines Used By All Services                  #
 #####################################################################################
