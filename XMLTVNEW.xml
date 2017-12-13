@@ -38,14 +38,6 @@
     <display-name lang="en">NBC Los Angeles</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
-  <channel id="NBC San Diego">
-    <display-name lang="en">NBC San Diego</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="CBS Atlanta">
-    <display-name lang="en">CBS Atlanta</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
   <channel id="CBS Boston">
     <display-name lang="en">CBS Boston</display-name>
     <url>http://www.tvguide.com</url>
