@@ -1,267 +1,321 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V2.1 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
+  <channel id="NBC Boston">
+    <display-name>NBC Boston</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel><channel id="NBC Buffalo">
+    <display-name>NBC Buffalo</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel><channel id="NBC Chicago">
+    <display-name>NBC Chicago</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Dallas">
+    <display-name>NBC Dallas</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Harrisburg">
+    <display-name>NBC Harrisburg</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Houston">
+    <display-name>NBC Houston</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Miami">
+    <display-name>NBC Miami</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC New York">
+    <display-name>NBC New York</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Philadelphia">
+    <display-name>NBC Philadelphia</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC Los Angeles">
+    <display-name>NBC Los Angeles</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="NBC San Diego">
+    <display-name>NBC San Diego</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="CBS Atlanta">
+    <display-name>CBS Atlanta</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="CBS Boston">
+    <display-name>CBS Boston</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
+  <channel id="CBS Buffalo">
+    <display-name>CBS Buffalo</display-name>
+    <url>http://www.tvguide.com</url>
+  </channel>
   <channel id="CBS Chicago">
-    <display-name lang="en">CBS Chicago</display-name>
+    <display-name>CBS Chicago</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Detroit">
-    <display-name lang="en">CBS Detroit</display-name>
+    <display-name>CBS Detroit</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Houston">
-    <display-name lang="en">CBS Houston</display-name>
+    <display-name>CBS Houston</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Harrisburg">
-    <display-name lang="en">CBS Harrisburg</display-name>
+    <display-name>CBS Harrisburg</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Miami">
-    <display-name lang="en">CBS Miami</display-name>
+    <display-name>CBS Miami</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS New York">
-    <display-name lang="en">CBS New York</display-name>
+    <display-name>CBS New York</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Philadelphia">
-    <display-name lang="en">CBS Philadelphia</display-name>
+    <display-name>CBS Philadelphia</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS Los Angeles">
-    <display-name lang="en">CBS Los Angeles</display-name>
+    <display-name>CBS Los Angeles</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBS San Diego">
-    <display-name lang="en">CBS San Diego</display-name>
+    <display-name>CBS San Diego</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Atlanta">
-    <display-name lang="en">ABC Atlanta</display-name>
+    <display-name>ABC Atlanta</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Boston">
-    <display-name lang="en">ABC Boston</display-name>
+    <display-name>ABC Boston</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Buffalo">
-    <display-name lang="en">ABC Buffalo</display-name>
+    <display-name>ABC Buffalo</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Chicago">
-    <display-name lang="en">ABC Chicago</display-name>
+    <display-name>ABC Chicago</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Dallas">
-    <display-name lang="en">ABC Dallas</display-name>
+    <display-name>ABC Dallas</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Miami">
-    <display-name lang="en">ABC Miami</display-name>
+    <display-name>ABC Miami</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Harrisburg">
-    <display-name lang="en">ABC Harrisburg</display-name>
+    <display-name>ABC Harrisburg</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Houston">
-    <display-name lang="en">ABC Houston</display-name>
+    <display-name>ABC Houston</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC New York">
-    <display-name lang="en">ABC New York</display-name>
+    <display-name>ABC New York</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Philadelphia">
-    <display-name lang="en">ABC Philadelphia</display-name>
+    <display-name>ABC Philadelphia</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC Los Angeles">
-    <display-name lang="en">ABC Los Angeles</display-name>
+    <display-name>ABC Los Angeles</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="ABC San Diego">
-    <display-name lang="en">ABC San Diego</display-name>
+    <display-name>ABC San Diego</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Atlanta">
-    <display-name lang="en">FOX Atlanta</display-name>
+    <display-name>FOX Atlanta</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Buffalo">
-    <display-name lang="en">Fox Buffalo</display-name>
+    <display-name>Fox Buffalo</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Chicago">
-    <display-name lang="en">FOX Chicago</display-name>
+    <display-name>FOX Chicago</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Dallas">
-    <display-name lang="en">FOX Dallas</display-name>
+    <display-name>FOX Dallas</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Harrisburg">
-    <display-name lang="en">FOX Harrisburg</display-name>
+    <display-name>FOX Harrisburg</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Houston">
-    <display-name lang="en">FOX Houston</display-name>
+    <display-name>FOX Houston</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Miami">
-    <display-name lang="en">FOX Miami</display-name>
+    <display-name>FOX Miami</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX New York">
-    <display-name lang="en">FOX New York</display-name>
+    <display-name>FOX New York</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX Raleigh">
-    <display-name lang="en">FOX Raleigh</display-name>
+    <display-name>FOX Raleigh</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="FOX San Diego">
-    <display-name lang="en">FOX San Diego</display-name>
+    <display-name>FOX San Diego</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="MYTV Philadelphia">
-    <display-name lang="en">MYTV Philadelphia</display-name>
+    <display-name>MYTV Philadelphia</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CW Philadelphia">
-    <display-name lang="en">CW Philadelphia</display-name>
+    <display-name>CW Philadelphia</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CW  Harrisburg">
-    <display-name lang="en">CW  Harrisburg</display-name>
+    <display-name>CW  Harrisburg</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="PBS State College">
-    <display-name lang="en">PBS State College</display-name>
+    <display-name>PBS State College</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="METV">
-    <display-name lang="en">ME TV</display-name>
+    <display-name>ME TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="JLTV">
-    <display-name lang="en">Jewish Life TV</display-name>
+    <display-name>Jewish Life TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="Heart TV">
-    <display-name lang="en">Heart TV</display-name>
+    <display-name>Heart TV</display-name>
     <icon src="http://tv.sky.com/logo/248/60/skychb3830.png" />
     <url>http://www.tv.sky.com</url>
   </channel>
   <channel id="CAPITAL TV">
-    <display-name lang="en">Capital TV</display-name>
+    <display-name>Capital TV</display-name>
     <icon src="http://tv.sky.com/logo/248/60/skychb2552.png" />
     <url>http://www.tv.sky.com</url>
   </channel>
   <channel id="WN">
-    <display-name lang="en">Weather Nation</display-name>
+    <display-name>Weather Nation</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="TWC">
-    <display-name lang="en">The Weather Channel</display-name>
+    <display-name>The Weather Channel</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CSPAN1">
-    <display-name lang="en">CSPAN 1</display-name>
+    <display-name>CSPAN 1</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CSPAN2">
-    <display-name lang="en">CSPAN 2</display-name>
+    <display-name>CSPAN 2</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CSPAN3">
-    <display-name lang="en">CSPAN 3</display-name>
+    <display-name>CSPAN 3</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="3AB">
-    <display-name lang="en">3 Angels TV</display-name>
+    <display-name>3 Angels TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CBN">
-    <display-name lang="en">CBN</display-name>
+    <display-name>CBN</display-name>
   </channel>
   <channel id="CORN">
-    <display-name lang="en">Cornerstone TV</display-name>
+    <display-name>Cornerstone TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="CTN">
-    <display-name lang="en">CTN TV</display-name>
+    <display-name>CTN TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="DAY">
-    <display-name lang="en">Daystar</display-name>
+    <display-name>Daystar</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="GEB">
-    <display-name lang="en">GEB America</display-name>
+    <display-name>GEB America</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="Gene Scott">
-    <display-name lang="en">Gene Scott</display-name>
+    <display-name>Gene Scott</display-name>
   </channel>
   <channel id="GOD">
-    <display-name lang="en">GOD TV</display-name>
+    <display-name>GOD TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="Goodlife 45">
-    <display-name lang="en">Goodlife 45</display-name>
+    <display-name>Goodlife 45</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="HILL">
-    <display-name lang="en">Hillsongs Channel</display-name>
+    <display-name>Hillsongs Channel</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="HOPE">
-    <display-name lang="en">Hope Channel</display-name>
+    <display-name>Hope Channel</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="JUCE">
-    <display-name lang="en">JUCE</display-name>
+    <display-name>JUCE</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="LLBN">
-    <display-name lang="en">LLBN</display-name>
+    <display-name>LLBN</display-name>
   </channel>
   <channel id="NRBTV">
-    <display-name lang="en">NRBTV</display-name>
+    <display-name>NRBTV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="SALT">
-    <display-name lang="en">Salt And Light</display-name>
+    <display-name>Salt And Light</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="SON">
-    <display-name lang="en">SonLife Network</display-name>
+    <display-name>SonLife Network</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="SUPER">
-    <display-name lang="en">SuperChannel</display-name>
+    <display-name>SuperChannel</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="TBN">
-    <display-name lang="en">TBN Network</display-name>
+    <display-name>TBN Network</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="TBNUK">
-    <display-name lang="en">TBN United Kingdom</display-name>
+    <display-name>TBN United Kingdom</display-name>
     <icon src="http://tv.sky.com/logo/248/60/skychb3109.png" />
     <url>http://www.tv.sky.com</url>
   </channel>
   <channel id="TCT">
-    <display-name lang="en">TCT</display-name>
+    <display-name>TCT</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="WORD">
-    <display-name lang="en">Word Network</display-name>
+    <display-name>Word Network</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="WHT">
-    <display-name lang="en">World Harvest TV</display-name>
+    <display-name>World Harvest TV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <programme start="20171211233000 -0500" stop="20171212000000 -0500" channel="NBC Boston">
