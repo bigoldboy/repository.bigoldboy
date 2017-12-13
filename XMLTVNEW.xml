@@ -1,51 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V2.1 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
-  <channel id="NBC Boston">
-    <display-name lang="en">NBC Boston</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel><channel id="NBC Buffalo">
-    <display-name lang="en">NBC Buffalo</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel><channel id="NBC Chicago">
-    <display-name lang="en">NBC Chicago</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Dallas">
-    <display-name lang="en">NBC Dallas</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Harrisburg">
-    <display-name lang="en">NBC Harrisburg</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Houston">
-    <display-name lang="en">NBC Houston</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Miami">
-    <display-name lang="en">NBC Miami</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC New York">
-    <display-name lang="en">NBC New York</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Philadelphia">
-    <display-name lang="en">NBC Philadelphia</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="NBC Los Angeles">
-    <display-name lang="en">NBC Los Angeles</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="CBS Boston">
-    <display-name lang="en">CBS Boston</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
-  <channel id="CBS Buffalo">
-    <display-name lang="en">CBS Buffalo</display-name>
-    <url>http://www.tvguide.com</url>
-  </channel>
   <channel id="CBS Chicago">
     <display-name lang="en">CBS Chicago</display-name>
     <url>http://www.tvguide.com</url>
