@@ -1,26 +1,4 @@
 #EXTM3U
-#EXTINF:-1,Fox News
-http://vaders.tv:80/live/rondyer@gmail.com/rondyer/2449.ts
-#EXTINF:-1,NBC Boston
-http://vaders.tv/live/rondyer@gmail.com/rondyer/52238.ts
-#EXTINF:-1,NBC Buffalo
-http://vaders.tv/live/rondyer@gmail.com/rondyer/2532.ts
-#EXTINF:-1,NBC Chicago
-http://vaders.tv/live/rondyer@gmail.com/rondyer/52229.ts
-#EXTINF:-1,NBC Dallas
-http://vaders.tv/live/rondyer@gmail.com/rondyer/52240.ts
-Heart Tv
-http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/master.m3u8
-Capital TV
-http://ooyalahd2-f.akamaihd.net/i/globalradio01_delivery@156521/master.m3u8
-Weather Nation
-http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8
-The Weather Channel
-http://weather-lh.akamaihd.net/i/twc_1@92006/master.m3u8
-CSPAN 1
-http://cspan1-lh.akamaihd.net/i/cspan1_1@304727/master.m3u8
-CSPAN 2
-http://cspan2-lh.akamaihd.net/i/cspan2_1@304728/master.m3u8
-CSPAN 3
-http://cspan3-lh.akamaihd.net/i/cspan3_1@304729/master.m3u8
 
+#EXTINF:-1 tvg-name="Channel #34" tvg-id="2532.vaders.tv" tvg-logo="" ,NBC Buffalo
+http://vapi.vaders.tv/play/2532.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
