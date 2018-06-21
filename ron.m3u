@@ -1,4 +1,8 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-name="Channel #34" tvg-id="2532.vaders.tv" tvg-logo="" ,NBC Buffalo
-http://vapi.vaders.tv/play/2532.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
+#EXTINF:-1 tvg-name="ABC Spark HD" tvg-id="ABCSpark.ca" tvg-logo="http://vaders.tv/logos/abc%20spark%20hd.png" group-title="Other",ABC Spark HD
+http://vapi.vaders.tv/play/2862.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
+
+#EXTINF:-1 tvg-name="Star Movies HD" tvg-id="None" tvg-logo="http://vaders.tv/logos/star%20movies.png" group-title="Other",Star Movies HD
+http://vapi.vaders.tv/play/12277.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
+
