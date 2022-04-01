@@ -1,8 +1,37 @@
-#EXTM3U
+#EXTM3U 
+#EXTINF:0 channelID="0501"  tvg-id="EPG123.16374.schedulesdirect.org" group-title="01 PBS" tvg-logo="https://github.com/Tapiosinn/tv-logos/raw/master/countries/united-states/fox-news-us.png" ,Fox News (E)
+http://etvserv.xyz:55337/live/SXvnMpGX86/PrX3m4Cb40/50404.ts
 
-#EXTINF:-1 tvg-name="ABC Spark HD" tvg-id="ABCSpark.ca" tvg-logo="http://vaders.tv/logos/abc%20spark%20hd.png" group-title="Other",ABC Spark HD
-http://vapi.vaders.tv/play/2862.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
 
-#EXTINF:-1 tvg-name="Star Movies HD" tvg-id="None" tvg-logo="http://vaders.tv/logos/star%20movies.png" group-title="Other",Star Movies HD
-http://vapi.vaders.tv/play/12277.ts?token=eyJ1c2VybmFtZSI6InJvbmR5ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJTYW1teVRvb1RvbyJ9
+#EXTINF:0 channelID="0923"  tvg-id="WYFRE" group-title="09 Radio" tvg-logo="https://lh3.googleusercontent.com/JptmDPNYXOj5XZFobOeAV3OLWWE1mB1G1_pw-3QKpXsrFjqg1h-hYVms6FsvKWFqbEU" ,Family Radio East (M)
+http://17533.live.streamtheworld.com/FAMILYRADIO_EASTAAC.aac
+#EXTINF:0 channelID="0924"  tvg-id="WYFRW" group-title="09 Radio" tvg-logo="https://lh3.googleusercontent.com/JptmDPNYXOj5XZFobOeAV3OLWWE1mB1G1_pw-3QKpXsrFjqg1h-hYVms6FsvKWFqbEU" ,Family Radio West (M)
+http://14523.live.streamtheworld.com/FAMILYRADIO_WESTAAC.aac
+#EXTINF:0 channelID="0957"  tvg-id="WTOJ" group-title="09 Radio" tvg-logo="https://player.streamguys.com/wtoj/sgplayer/include/assets/img/logo.png" ,WTOJ (M)
+https://cb.streamguys1.com/wtoj.aac
+#EXTINF:0 channelID="0931"  tvg-id="KOOL98" group-title="09 Radio" tvg-logo="http://kool98.fm/wp-content/uploads/sites/10/2016/08/logo-1.png" ,Kool 98  (M)
+http://mbsradio.leanstream.co/CJYCFM-MP3
+#EXTINF:0 channelID="0932"  tvg-id="RGOLD" group-title="09 Radio" tvg-logo="https://www.radiogold.de/images/logo2.png" ,Radio Gold (M)
+https://radiogold--di--nacs-ais-lgc--0b--cdn.cast.addradio.de/radiogold/live/mp3/high/stream.mp3
+#EXTINF:0 channelID="0933"  tvg-id="KKVT" group-title="09 Radio" tvg-logo="https://d1mw12smyvvnsk.cloudfront.net/uploads/station/703/fbShare.png?r=23835" ,KKVT (M)
+http://playerservices.streamtheworld.com/api/livestream-redirect/KKVTFM.flv
+#EXTINF:0 channelID="0956"  tvg-id="Z983" group-title="09 Radio" tvg-logo="https://lh3.googleusercontent.com/proxy/R8uY6yiDJuuEwTMMsSiMqX4F1cnmud1y_QXpUgMQLJduHEgFnV2Cgk5xp4pCs1zidT8y-xOCLPDfLmKhOcUezcrK2jPi3JL4WGGi9nl4gx8oNW04k7a3NMYshN2V4NRWRBM3EAdczY3Wvo2QPT1vde1AzxqGLq1ssA" ,Z985 (M)
+https://stream.radio.co/s3cfb3884e/listen
+#EXTINF:0 channelID="0951"  tvg-id="680NEWS" group-title="09 Radio" tvg-logo="https://www.680news.com/wp-content/blogs.dir/sites/2/2014/11/CFTR-AM_680_News_logo.png" ,680 News (M)
+http://rogers-hls.leanstream.co:8000/rogers/tor680.stream/48k/playlist.m3u8
+#EXTINF:0 channelID="0954"  tvg-id="WFSX" group-title="09 Radio" tvg-logo="https://925foxnews.com/wp-content/uploads/2019/03/FOX925-NEWPOSITION-WEBSITE_LOGO.png" ,92.5 Fort Myers (M)
+https://14003.live.streamtheworld.com/WFSXFMAAC.aac
+#EXTINF:0 channelID="0955"  tvg-id="WABCR" group-title="09 Radio" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Talkradio_77_WABC_new_logo_2020.png/440px-Talkradio_77_WABC_new_logo_2020.png" ,WABC 770 (M)
+https://prod-35-230-99-65.wostreaming.net/redapple-wlirfmaac-imc1
+#EXTINF:0 channelID="0957"  tvg-id="AT40" group-title="09 Radio" tvg-logo="" ,AT40 (M)
+http://stream.revma.ihrhls.com/zc6545/hls.m3u8
+
+
+#EXTINF:0 channelID="1125"  tvg-id="MPT" group-title="10 PBS" tvg-logo="https://d1qbemlbhjecig.cloudfront.net/prod/filer_public/mpt-bento-live-pbs/digitalstudios/3ced34c59a_promo_beinspired_sm.jpg" ,PBS Maryland (M)
+https://2-fss-2.streamhoster.com/pl_138/amlst:201814-1291584/playlist.m3u8
+#EXTINF:0 channelID="1127"  tvg-id="KET" group-title="10 PBS" tvg-logo="https://image.pbs.org/stations/wkgb-color-logo-ZEEQejJ.png" ,PBS Kentucky (M)
+https://2-fss-1.streamhoster.com/pl_134/amlst:200914-1282960/playlist.m3u8?DVR
+#EXTINF:0 channelID="1129"  tvg-id="WGCU" group-title="10 PBS" tvg-logo="https://image.pbs.org/stations/wgcu-color-logo-duUwEGT.png" ,PBS Fort Myers (E)
+http://etvserv.xyz:55337/live/SXvnMpGX86/PrX3m4Cb40/14135.ts
+
 
